@@ -18,7 +18,7 @@ def get_user_agent() -> str:
         return "DefaultLangchainUserAgent"
     return env_user_agent
 
-v_apik = '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'
+v_apik = ''
 os.environ['GROQ_API_KEY'] = v_apik
 v_model_chat = ChatGroq(model='llama-3.3-70b-versatile')
 v_log = lg.getLogger(__name__)
