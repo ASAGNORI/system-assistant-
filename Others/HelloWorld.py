@@ -19,7 +19,7 @@ st.write(var_str)
 
 st.divider()
 
-df_reviews = pd.read_csv("datasets/customer reviews.csv")
+df_reviews = pd.read_csv("others/datasets/customer reviews.csv")
 df_top_100_books = pd.read_csv("datasets/Top-100 Trending Books.csv")
 v_price_max = df_top_100_books["book price"].max()
 v_price_min = df_top_100_books["book price"].min()

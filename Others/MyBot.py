@@ -48,7 +48,7 @@ def carrega_site():
   return v_local_docs
 
 def carrega_pdf():
-  v_local_pdfs = '\system-assistant-\datasets'
+  v_local_pdfs = '\system-assistant-\others\datasets'
   return v_local_pdfs
 
 "=============================================================================="
