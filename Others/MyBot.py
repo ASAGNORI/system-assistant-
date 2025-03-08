@@ -18,8 +18,9 @@ def get_user_agent() -> str:
         return "DefaultLangchainUserAgent"
     return env_user_agent
 
-v_apik = ''
-os.environ['GROQ_API_KEY'] = v_apik
+# Chave de API (armazene em uma variável de ambiente para segurança)
+V_API_KEY = os.getenv("GROQ_API_KEY")  # Configure no ambiente
+os.environ['GROQ_API_KEY'] = V_API_KEY
 v_model_chat = ChatGroq(model='llama-3.3-70b-versatile')
 v_log = lg.getLogger(__name__)
 
